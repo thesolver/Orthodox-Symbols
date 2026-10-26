@@ -2,6 +2,15 @@
 
 *Designed by Alan Fahrner with Juno, his AI assistant (built on Grok Bot). The glyphs were drawn by AI from Alan's direction and reviewed by him.*
 
+## 0.2.001 PRE-RELEASE (2026-10-25)
+
+**This is a pre-release. During this pre-release stage we may change or remove any symbol.**
+
+Documentation update only. No symbols were added, redrawn or removed, and no keys or private-use codes changed. 65 glyphs total.
+
+- **License note:** the README and the Word guide/PDF now say, next to the license section: "This font is a free pre-release, provided as is, without warranty. See OFL.txt for the full terms."
+- **Version number:** the font files are rebuilt only to carry the new version number (head.fontRevision 0.201, name table "Version 0.201; pre-release"). The drawings, keys and codes are the same as 0.2.000.
+
 ## 0.2.000 PRE-RELEASE (2026-10-25)
 
 **This is a pre-release. During this pre-release stage we may change or remove any symbol.** Until version 1.0, existing symbols, key assignments and private-use codes may change or be remapped as feedback arrives, and the author reserves the right to do so. This replaces the earlier "assignments never change once released" rule until 1.0.

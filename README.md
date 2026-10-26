@@ -1,9 +1,9 @@
-# Orthodox Symbols (version 0.2.000, PRE-RELEASE)
+# Orthodox Symbols (version 0.2.001, PRE-RELEASE)
 
 *Designed by Alan Fahrner with Juno, his AI assistant (built on Grok Bot). The glyphs were drawn by AI from Alan's direction and reviewed by him.*
 
 > ## ⚠️ PRE-RELEASE: NOT FINAL
-> **Version 0.2.000 is a pre-release test version, shared for feedback.**
+> **Version 0.2.001 is a pre-release test version, shared for feedback.**
 > **During this pre-release stage we may change or remove any symbol.**
 > Existing symbols may be redrawn, replaced or removed, and **key assignments and private-use codes may be changed or remapped** as feedback arrives. The author reserves the right to do so.
 > Documents made with a pre-release may look different after you install a later version.
@@ -270,7 +270,7 @@ symbols will only go on reserved keys and new codes.
 
 ## Files
 
-- `OrthodoxSymbols.ttf`: the font, version 0.2.000 pre-release (name table: "Version 0.200; pre-release") (1000 units/em, ascent 850, descent 200; OS/2 fsType 0 = installable, so it can be embedded in Word and PDF)
+- `OrthodoxSymbols.ttf`: the font, version 0.2.001 pre-release (name table: "Version 0.201; pre-release") (1000 units/em, ascent 850, descent 200; OS/2 fsType 0 = installable, so it can be embedded in Word and PDF)
 - `OrthodoxSymbols.woff2`: the same font compressed for websites
 - `OrthodoxSymbols_Guide.docx` (Word, font embedded) and `OrthodoxSymbols_Guide.pdf`: pre-release banner, install steps for Windows/macOS/Linux, key chart, sizes, how-to, website use, reserved-keys note, sample cue sheet, license
 - `CHANGELOG.md`: what changed in each version, including any keys that moved
@@ -282,12 +282,14 @@ Please report problems or ideas (a symbol that reads badly, a missing symbol, a 
 
 ## Version numbers
 
-Pre-releases are numbered 0.x (this is 0.2.000; the font's `head.fontRevision` is 0.2 and the name table says "Version 0.200; pre-release", following the Google Fonts MAJOR.MINOR style). The first draft published on GitHub as `v1.000` is now treated as pre-release 0.1. Version 1.0 will be the first stable release, when key assignments freeze.
+Pre-releases are numbered 0.x (this is 0.2.001; the font's `head.fontRevision` is 0.201 and the name table says "Version 0.201; pre-release", following the Google Fonts MAJOR.MINOR style). The first draft published on GitHub as `v1.000` is now treated as pre-release 0.1. Version 1.0 will be the first stable release, when key assignments freeze.
 
 ## License
 
 SIL Open Font License 1.1. See `OFL.txt`.
 Copyright 2026 Alan Fahrner, with Reserved Font Name "Orthodox Symbols".
+
+This font is a free pre-release, provided as is, without warranty. See OFL.txt for the full terms.
 
 **What the Reserved Font Name means, in plain words** (this summary is not the license; `OFL.txt` is what counts):
 
