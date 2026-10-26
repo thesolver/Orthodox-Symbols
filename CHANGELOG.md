@@ -2,6 +2,22 @@
 
 *Designed by Alan Fahrner with Juno, his AI assistant (built on Grok Bot). The glyphs were drawn by AI from Alan's direction and reviewed by him.*
 
+## 0.3.000 PRE-RELEASE (2026-10-26)
+
+**This is a pre-release. Symbol locations are fixed: once a symbol is assigned to a key, it will not move, so documents you create will keep working. New symbols are added only on unused keys. A symbol may be removed if church authority judges it inappropriate.**
+
+Three new symbols and a new key policy. 68 glyphs total. No existing symbol was redrawn, and no existing key or private-use code changed.
+
+- **New policy: fixed symbol locations.** The pre-release banner "During this pre-release stage we may change or remove any symbol" is replaced, in the README and the Word guide/PDF, by the statement above. This ends the earlier pre-release rule that keys and codes could be remapped before 1.0. The font is still a pre-release: some drawings may be refined, but a symbol keeps its key and code.
+- **Blessing hand** (`B`, U+E0AB): still an experimental drawing. Its note now says the drawing may be refined in a future version, but it stays on key `B`.
+- **New symbol: Missal** (`m`, U+E035, Worship vessels and objects). An open book drawn like the Hymnal, with a cross on the right page, three text lines on the left page and a ribbon marker running the full height of the book down the middle, ending below the cover in a forked tail. `M` is the Mandorla, so the missal takes lowercase `m`; U+E034 is kept for an outline missal.
+- **New symbol: Chasuble with a cross** (`~`, Shift+`` ` ``, U+E037, Worship vessels and objects). Front view of a phelonion/chasuble: a cape with rounded shoulders flaring to a wide curved hem, a round neck opening, and a cross on the front. U+E036 is kept for an outline.
+- **New symbol: Chasuble with a band** (`` ` ``, U+E039, Worship vessels and objects). The same cape with a wide orphrey band down the centre joined to a collar band, and a hem band, separated by white lines. It shares the `` ` `` key with the cross chasuble because no better key was free; U+E038 is kept for an outline. The band's white lines read from 24 px but may fill in at 12 to 16 px.
+- **Version number:** head.fontRevision 0.3, name table "Version 0.300; pre-release".
+- **Keys that moved:** none.
+
+*Earlier entries below describe the rules as they were at the time.*
+
 ## 0.2.001 PRE-RELEASE (2026-10-25)
 
 **This is a pre-release. During this pre-release stage we may change or remove any symbol.**
@@ -107,7 +123,7 @@ Documents made with either earlier file will show different symbols with 0.2.000
 - `OrthodoxSymbols.woff2` web font built alongside the TTF.
 - README: pre-release banner; install steps for Windows, macOS and Linux.
 - OS/2 fsType 0 (installable), so Word and PDF can embed the font.
-- User guide (`OrthodoxSymbols_Guide.docx` and `.pdf`): font embedded in the .docx as obfuscated .odttf; (font embedded as obfuscated .odttf) and PDF: grouped key chart with the key and code under each symbol, sizes 10/14/24/48 pt, how-to, boxed pre-release banner, install steps for Windows/macOS/Linux, boxed reserved-keys note, sample cue sheet, license summary and full OFL text.
+- User guide (`OrthodoxSymbols_Guide.docx` and `.pdf`): font embedded in the .docx as obfuscated .odttf; PDF: grouped key chart with the key and code under each symbol, sizes 10/14/24/48 pt, how-to, boxed pre-release banner, install steps for Windows/macOS/Linux, boxed reserved-keys note, sample cue sheet, license summary and full OFL text.
 
 ### Reserved keys
 - New **placeholder glyph**: every printable ASCII key not in the README tables now shows one small hollow square with broken edges instead of falling back to another font. Space is still a space.

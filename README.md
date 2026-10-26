@@ -1,13 +1,11 @@
-# Orthodox Symbols (version 0.2.001, PRE-RELEASE)
+# Orthodox Symbols (version 0.3.000, PRE-RELEASE)
 
 *Designed by Alan Fahrner with Juno, his AI assistant (built on Grok Bot). The glyphs were drawn by AI from Alan's direction and reviewed by him.*
 
-> ## ⚠️ PRE-RELEASE: NOT FINAL
-> **Version 0.2.001 is a pre-release test version, shared for feedback.**
-> **During this pre-release stage we may change or remove any symbol.**
-> Existing symbols may be redrawn, replaced or removed, and **key assignments and private-use codes may be changed or remapped** as feedback arrives. The author reserves the right to do so.
-> Documents made with a pre-release may look different after you install a later version.
-> Key assignments will be frozen only at **version 1.0**. Until then, nothing is guaranteed to stay the same.
+> ## ⚠️ PRE-RELEASE
+> **Version 0.3.000 is a pre-release version, shared for feedback.**
+> **Symbol locations are fixed: once a symbol is assigned to a key, it will not move, so documents you create will keep working. New symbols are added only on unused keys. A symbol may be removed if church authority judges it inappropriate.**
+> Some drawings may still be refined before 1.0, but a symbol keeps its key and its private-use code.
 
 A Wingdings-style symbol font for liturgical documents. Every glyph is original,
 drawn for this font.
@@ -15,7 +13,7 @@ Nothing is traced or copied from Wingdings or any other font. (The one exception
 experimental blessing hand, which was traced from Alan's own icon reference; see the note above.)
 
 > **Blessing hand (`B`) is experimental.** It is a rough drawing traced from Alan's icon reference.
-> It may change or be removed in a future version, so please don't depend on it in documents you need to keep.
+> Its drawing may be refined in a future version, but it stays on key `B` (U+E0AB).
 
 Single-color glyphs: color them in Word like any text (e.g. dark red).
 Outlined glyphs use a thin line (44 of 1000 units) so they look delicate at large
@@ -41,8 +39,8 @@ In short: **install `OrthodoxSymbols.ttf` whichever way your system normally ins
 
 You can host the font on your own website today. **CDN-hosted version: coming later.**
 
-> The font is a **pre-release**: symbols, keys and private-use codes may still change before 1.0.
-> Keep the copy you uploaded, and check the README of any newer version before you replace it.
+> The font is a **pre-release**, but symbol keys and private-use codes are fixed, so your pages keep working when you update.
+> Some drawings may still be refined; check the README of any newer version before you replace your copy.
 
 1. **Upload the font files** to your site, for example into a `fonts/` folder:
    `OrthodoxSymbols.woff2` (what browsers use) and `OrthodoxSymbols.ttf` (fallback for very old browsers).
@@ -80,12 +78,12 @@ You can host the font on your own website today. **CDN-hosted version: coming la
 
    The codes are in the key mapping tables below (U+E02D is the filled Sanctus bell tree, so it is
    written `&#xE02D;`; U+E000 is the Russian cross outline, `&#xE000;`). They are the **stable address**
-   of each symbol: if a symbol's key ever moves, its code stays. While the font is still loading, or if
+   of each symbol (keys and codes are both fixed). While the font is still loading, or if
    it fails, a code shows as nothing or an empty box instead of a wrong letter.
 
    You can also type the **keyboard character** (`<span class="orthodox-symbols">L</span>`), the same
    as in Word. It is easier to read in the HTML, but it shows a plain "L" until the font loads (or if it
-   fails), and it would show a different symbol if that key is ever reassigned.
+   fails).
 4. **Accessibility.** Screen readers do not understand private-use characters (they say nothing,
    "private use", or the plain letter), so:
    - if the words next to the symbol already say what it means, hide the symbol: `aria-hidden="true"`;
@@ -114,7 +112,7 @@ Example page:
 </html>
 ```
 
-## How the keys are laid out (0.2.000 grouped map)
+## How the keys are laid out (grouped map)
 
 The symbols are grouped by theme. Each group has its own area of the keyboard and its own
 block of private-use codes, and **every group keeps spare keys and spare codes** so a new
@@ -144,9 +142,8 @@ Word also turns `'` into a curly quote; both give the choir symbol.
 Codes: in each pair the outline is the even code and the filled twin the next odd code. A symbol without
 an outline uses the odd code and leaves the even one free.
 
-**Private-use codes (PUA) are the stable address of each symbol.** If a symbol's key ever has to move,
-its code stays the same, so text entered by code (Insert > Symbol, Alt+X in Word, `&#xE0A1;` on the web)
-keeps working. During the pre-release, codes may still change too (see the banner); from 1.0 on they are frozen.
+**Keys and private-use codes (PUA) are both fixed.** Once a symbol is assigned to a key and a code, it will not move,
+so text typed by key or entered by code (Insert > Symbol, Alt+X in Word, `&#xE0A1;` on the web) keeps working.
 
 ### Crosses (U+E000 to U+E01F) · digit row; 6 to 0 kept free for more crosses
 
@@ -164,7 +161,7 @@ keeps working. During the pre-release, codes may still change too (see the banne
 | `%` (Shift+5) | U+E009 | Greek cross, filled |
 | `6` to `0`, `^ & * ( )` | U+E00A to U+E01F | free for future crosses |
 
-### Worship vessels and objects (U+E020 to U+E05F) · letters, lowercase = outline, uppercase = filled
+### Worship vessels and objects (U+E020 to U+E05F) · letters, lowercase = outline, uppercase = filled; the two chasubles share `` ` `` and `~`
 
 | Key | PUA | Symbol |
 |---|---|---|
@@ -178,7 +175,10 @@ keeps working. During the pre-release, codes may still change too (see the banne
 | `h` / `H` | U+E02E / U+E02F | Hymnal, outline / filled |
 | `G` | U+E031 | Gospel Book, ornate cover (`g` / U+E030 kept for an outline) |
 | `N` | U+E033 | Bible (B taken; N is next to B) (`n` / U+E032 kept for an outline) |
-| | U+E034 to U+E05F | free for future vessels and objects |
+| `m` | U+E035 | Missal: open book with a cross, text lines and a full-length ribbon marker (new in 0.3.000; M is the Mandorla; U+E034 kept for an outline) |
+| `~` (Shift+`` ` ``) | U+E037 | Chasuble (phelonion) with a cross on the front (new in 0.3.000; U+E036 kept for an outline) |
+| `` ` `` | U+E039 | Chasuble (phelonion) with a wide band (orphrey) down the front, collar and hem bands. Shares the `` ` `` key with the cross chasuble because no other suitable key was free (new in 0.3.000; U+E038 kept for an outline) |
+| | U+E034, U+E036, U+E038, U+E03A to U+E05F | free for future vessels and objects (U+E036 and U+E038 kept for outline chasubles) |
 
 ### Buildings (U+E060 to U+E07F) · top-right punctuation; `\` and `|` kept free
 
@@ -206,7 +206,7 @@ keeps working. During the pre-release, codes may still change too (see the banne
 | | U+E080, U+E082, U+E084, U+E086, U+E088 to U+E08F, U+E098, U+E09A to U+E09F | free for more people (E08x) and postures (E09x) |
 
 The postures run left to right along the bottom row from shallowest to deepest. Their codes did not change
-when their keys moved (codes are the stable address); the new Western deep bow got the next free code.
+when their keys moved in 0.2.000 (before keys were fixed); the new Western deep bow got the next free code.
 
 ### Icon and Christ symbols (U+E0A0 to U+E0BF) · their letters, or nearby letters
 
@@ -217,7 +217,7 @@ when their keys moved (codes are the stable address); the new Western deep bow g
 | `P` `p` | U+E0A5 | Chi-Rho |
 | `O` | U+E0A7 | Cruciform halo (a circle with a cross: letter-like O) |
 | `M` | U+E0A9 | Mandorla |
-| `B` | U+E0AB | Blessing hand (IC XC), EXPERIMENTAL: a rough drawing traced from Alan's icon reference (index and middle fingers raised, ring finger curled to the thumb, little finger out on the left, cuff band at the wrist). It may change or be removed in a future version, so don't depend on it. B for Blessing; `b` kept for an outline |
+| `B` | U+E0AB | Blessing hand (IC XC), EXPERIMENTAL: a rough drawing traced from Alan's icon reference (index and middle fingers raised, ring finger curled to the thumb, little finger out on the left, cuff band at the wrist). Its drawing may be refined in a future version, but it stays on `B`. B for Blessing; `b` kept for an outline |
 | `j` | U+E0AC | Fish (ichthys), outline style: a long, slim almond body whose two arcs cross into the tail (ICHTHYS wanted I; J is the old form of I). `J` / U+E0AD kept for a filled fish |
 | `S` | U+E0AF | Eight-pointed star |
 | `Q` | U+E0B1 | Cross in a circle (letter-like: Q is a circle with a mark; moved from `L`). `q` kept for an outline |
@@ -250,8 +250,8 @@ On each key the lowercase letter (even code) is an Eastern hat and Shift (odd co
 
 ### Free keys today
 
-`6 7 8 9 0 ^ & * ( )` (crosses), `\ |` (buildings), `?` (postures), `` ` ~ ``, `F` (headwear),
-the lowercase keys kept for future outlines `b g n o m s q`, and `J` (kept for a filled fish).
+`6 7 8 9 0 ^ & * ( )` (crosses), `\ |` (buildings), `?` (postures), `F` (headwear),
+the lowercase keys kept for future outlines `b g n o s q`, and `J` (kept for a filled fish).
 All of them show the placeholder square.
 
 ## Reserved keys
@@ -260,17 +260,14 @@ Reserved keys show a placeholder square; they may become symbols in later versio
 
 Every printable key not listed in the tables above (see "Free keys today") shows the same small, broken-edged hollow square. It is a plain
 "nothing here yet" mark, not a symbol, and it has no private-use code. Reserved keys must not
-be relied on for ordinary text. The author reserves the right to map any key to a symbol in a
-future version; when that happens, the placeholder on that key is replaced.
+be relied on for ordinary text. New symbols are added only on these unused keys; when that happens,
+the placeholder on that key is replaced.
 
-**Pre-release rule (before 1.0):** listed keys and codes may also change or be remapped (see the
-banner at the top). This replaces the earlier rule that assignments never change once released.
-**From version 1.0 on:** released key assignments and private-use codes will never change; new
-symbols will only go on reserved keys and new codes.
+**Fixed locations (from 0.3.000):** Symbol locations are fixed: once a symbol is assigned to a key, it will not move, so documents you create will keep working. New symbols are added only on unused keys. A symbol may be removed if church authority judges it inappropriate. This replaces the earlier pre-release rule that keys and codes could be remapped before 1.0.
 
 ## Files
 
-- `OrthodoxSymbols.ttf`: the font, version 0.2.001 pre-release (name table: "Version 0.201; pre-release") (1000 units/em, ascent 850, descent 200; OS/2 fsType 0 = installable, so it can be embedded in Word and PDF)
+- `OrthodoxSymbols.ttf`: the font, version 0.3.000 pre-release (name table: "Version 0.300; pre-release") (1000 units/em, ascent 850, descent 200; OS/2 fsType 0 = installable, so it can be embedded in Word and PDF)
 - `OrthodoxSymbols.woff2`: the same font compressed for websites
 - `OrthodoxSymbols_Guide.docx` (Word, font embedded) and `OrthodoxSymbols_Guide.pdf`: pre-release banner, install steps for Windows/macOS/Linux, key chart, sizes, how-to, website use, reserved-keys note, sample cue sheet, license
 - `CHANGELOG.md`: what changed in each version, including any keys that moved
@@ -282,7 +279,7 @@ Please report problems or ideas (a symbol that reads badly, a missing symbol, a 
 
 ## Version numbers
 
-Pre-releases are numbered 0.x (this is 0.2.001; the font's `head.fontRevision` is 0.201 and the name table says "Version 0.201; pre-release", following the Google Fonts MAJOR.MINOR style). The first draft published on GitHub as `v1.000` is now treated as pre-release 0.1. Version 1.0 will be the first stable release, when key assignments freeze.
+Pre-releases are numbered 0.x (this is 0.3.000; the font's `head.fontRevision` is 0.3 and the name table says "Version 0.300; pre-release", following the Google Fonts MAJOR.MINOR style). The first draft published on GitHub as `v1.000` is now treated as pre-release 0.1. Version 1.0 will be the first stable release. Key assignments are already fixed as of 0.3.000.
 
 ## License
 
