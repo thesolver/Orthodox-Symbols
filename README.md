@@ -2,6 +2,8 @@
 
 *Designed by Alan Fahrner with Juno, his AI assistant (built on Grok Bot). The glyphs were drawn by AI from Alan's direction and reviewed by him.*
 
+More about the font, with samples and downloads: [Orthodox Symbols on westernrite.org](https://westernrite.org/resources/orthodox-symbols.html).
+
 > ## ⚠️ PRE-RELEASE
 > **Version 0.3.000 is a pre-release version, shared for feedback.**
 > **Symbol locations are fixed: once a symbol is assigned to a key, it will not move, so documents you create will keep working. New symbols are added only on unused keys. A symbol may be removed if church authority judges it inappropriate.**
