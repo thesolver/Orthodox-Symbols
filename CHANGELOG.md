@@ -2,6 +2,32 @@
 
 *Designed by Alan Fahrner with Juno, his AI assistant (built on Grok Bot). The glyphs were drawn by AI from Alan's direction and reviewed by him.*
 
+## 0.6.000 PRE-RELEASE (2026-11-23)
+
+**This is a pre-release. Symbol locations are fixed: once a symbol is assigned to a key, it will not move, so documents you create will keep working. New symbols are added only on unused keys. A symbol may be removed if church authority judges it inappropriate.**
+
+One new glyph, and several drawings refined. 73 glyphs total. No existing key or private-use code changed. The head-nod glyphs from 0.4.000 are unchanged.
+
+This gathers work that was first tried locally as two test builds (v0.5-test on 2026-11-21 and v0.6-test on 2026-11-22) and was not released on its own.
+
+- **New symbol: cross pattée** (Crosses, U+E00B; also Unicode U+2720). A book-style flared-arm cross for the sign of the cross in running text, drawn from first principles (not copied from any font). It has no ASCII key, so 6–8 and their Shift keys stay free for future crosses. U+E00A is kept for a possible outline.
+- **Redrawn: versicle and response** (`V` / `R`, U+E0C1 / U+E0C3). The 0.6.000 marks are Antigravity's Garalde-style ℣ and ℟ (a capital V with a shorter slash that starts lower on the left stem, and a capital R with a short slash sitting low on the right leg). An earlier v0.5-test Garalde pass is superseded by these drawings.
+- **Optical sidebearings.** Most glyphs now get left and right sidebearings balanced by the ink near cap height, instead of one flat value. Head-nod glyphs, and the priest, cassock and choir emblems, keep the previous fixed sidebearings.
+- **Refined drawings:** standing figure (calmer stance), moderate bow, bell tree (filled and outline), and the Western deep bow (same accepted pose, slightly narrower so it sits closer in width to the other postures).
+- **Unchanged on purpose:** the Western thurible keeps the existing drawing (a chain-thurible trial is on hold; a rounded-bowl alternative was not used). The 0.4.000 head nods are unchanged.
+- **Version number:** head.fontRevision 0.6, name table "Version 0.600; pre-release".
+- **Keys that moved:** none.
+
+## 0.4.000 PRE-RELEASE (2026-11-15)
+
+**This is a pre-release. Symbol locations are fixed: once a symbol is assigned to a key, it will not move, so documents you create will keep working. New symbols are added only on unused keys. A symbol may be removed if church authority judges it inappropriate.**
+
+Four new glyphs (two head-nod symbols, each with an outline and a filled twin). 72 glyphs total. No existing symbol was redrawn, and no existing key or private-use code changed.
+
+- **New symbols: head nods** (People and postures, U+E09A–E09D). A head-and-shoulders profile facing right; the head turns forward about the top of the neck. The lesser nod (24°) is the reverence at the name of Mary: outline on `9` (U+E09A), filled on Shift+9 `(` (U+E09B). The deeper nod (40°) is the reverence at the name of Jesus: outline on `0` (U+E09C), filled on Shift+0 `)` (U+E09D). The bust stays upright, so the deeper nod is still a head nod, not a waist bow. These keys are on the digit row, which had been reserved for more crosses; 6–8 and their Shift keys stay free for crosses. `?` stays free in the postures group.
+- **Version number:** head.fontRevision 0.4, name table "Version 0.400; pre-release".
+- **Keys that moved:** none.
+
 ## 0.3.000 PRE-RELEASE (2026-10-26)
 
 **This is a pre-release. Symbol locations are fixed: once a symbol is assigned to a key, it will not move, so documents you create will keep working. New symbols are added only on unused keys. A symbol may be removed if church authority judges it inappropriate.**

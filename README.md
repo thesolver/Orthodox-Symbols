@@ -1,11 +1,11 @@
-# Orthodox Symbols (version 0.3.000, PRE-RELEASE)
+# Orthodox Symbols (version 0.6.000, PRE-RELEASE)
 
 *Designed by Alan Fahrner with Juno, his AI assistant (built on Grok Bot). The glyphs were drawn by AI from Alan's direction and reviewed by him.*
 
 More about the font, with samples and downloads: [Orthodox Symbols on westernrite.org](https://westernrite.org/resources/orthodox-symbols.html).
 
 > ## ⚠️ PRE-RELEASE
-> **Version 0.3.000 is a pre-release version, shared for feedback.**
+> **Version 0.6.000 is a pre-release version, shared for feedback.**
 > **Symbol locations are fixed: once a symbol is assigned to a key, it will not move, so documents you create will keep working. New symbols are added only on unused keys. A symbol may be removed if church authority judges it inappropriate.**
 > Some drawings may still be refined before 1.0, but a symbol keeps its key and its private-use code.
 
@@ -147,7 +147,7 @@ an outline uses the odd code and leaves the even one free.
 **Keys and private-use codes (PUA) are both fixed.** Once a symbol is assigned to a key and a code, it will not move,
 so text typed by key or entered by code (Insert > Symbol, Alt+X in Word, `&#xE0A1;` on the web) keeps working.
 
-### Crosses (U+E000 to U+E01F) · digit row; 6 to 0 kept free for more crosses
+### Crosses (U+E000 to U+E01F) · digit row 1-5; 6 to 8 kept free for more crosses (9/0 hold the head nods in People and postures)
 
 | Key | PUA | Symbol |
 |---|---|---|
@@ -161,7 +161,8 @@ so text typed by key or entered by code (Insert > Symbol, Alt+X in Word, `&#xE0A
 | `$` (Shift+4) | U+E007 | Latin cross, filled |
 | `5` | U+E008 | Greek cross, outline |
 | `%` (Shift+5) | U+E009 | Greek cross, filled |
-| `6` to `0`, `^ & * ( )` | U+E00A to U+E01F | free for future crosses |
+| — (also U+2720) | U+E00B | Cross pattée, book-style (sign of the cross). No ASCII key; U+E00A is kept for an outline |
+| `6` to `8`, `^ & *` | U+E00A, U+E00C to U+E01F | free for future crosses (`9` / `0` and Shift `(` / `)` are the head nods, below) |
 
 ### Worship vessels and objects (U+E020 to U+E05F) · letters, lowercase = outline, uppercase = filled; the two chasubles share `` ` `` and `~`
 
@@ -192,7 +193,7 @@ so text typed by key or entered by code (Insert > Symbol, Alt+X in Word, `&#xE0A
 | `]` / `}` | U+E066 / U+E067 | Onion-dome bell tower, outline / filled |
 | | U+E068 to U+E07F | free for future buildings |
 
-### People and postures (U+E080 to U+E09F) · people on `; : ' "`, postures on `, < . > /` from shallow to deep; `?` kept free
+### People and postures (U+E080 to U+E09F) · people on `; : ' "`, postures on `, < . > /` from shallow to deep; head nods on `9` `(` `0` `)`; `?` kept free
 
 | Key | PUA | Symbol |
 |---|---|---|
@@ -205,10 +206,15 @@ so text typed by key or entered by code (Insert > Symbol, Alt+X in Word, `&#xE0A
 | `.` | U+E099 | Posture: Western deep bow (profound bow from the waist; torso level, hands well above the floor) |
 | `>` (Shift+.) | U+E095 | Posture: Eastern deep bow / metania (reaching down to touch the ground) |
 | `/` | U+E097 | Posture: kneel |
-| | U+E080, U+E082, U+E084, U+E086, U+E088 to U+E08F, U+E098, U+E09A to U+E09F | free for more people (E08x) and postures (E09x) |
+| `9` | U+E09A | Posture: lesser head nod at the name of Mary, outline |
+| `(` (Shift+9) | U+E09B | Posture: lesser head nod at the name of Mary, filled |
+| `0` | U+E09C | Posture: deeper head nod at the name of Jesus, outline |
+| `)` (Shift+0) | U+E09D | Posture: deeper head nod at the name of Jesus, filled |
+| | U+E080, U+E082, U+E084, U+E086, U+E088 to U+E08F, U+E098, U+E09E, U+E09F | free for more people (E08x) and postures (E09x) |
 
-The postures run left to right along the bottom row from shallowest to deepest. Their codes did not change
+The full-body postures run left to right along the bottom row from shallowest to deepest. Their codes did not change
 when their keys moved in 0.2.000 (before keys were fixed); the new Western deep bow got the next free code.
+The head nods sit on `9` and `0` (and their Shift keys `(` and `)`), even though the digit row was reserved for crosses.
 
 ### Icon and Christ symbols (U+E0A0 to U+E0BF) · their letters, or nearby letters
 
@@ -252,7 +258,7 @@ On each key the lowercase letter (even code) is an Eastern hat and Shift (odd co
 
 ### Free keys today
 
-`6 7 8 9 0 ^ & * ( )` (crosses), `\ |` (buildings), `?` (postures), `F` (headwear),
+`6 7 8 ^ & *` (crosses), `\ |` (buildings), `?` (postures), `F` (headwear),
 the lowercase keys kept for future outlines `b g n o s q`, and `J` (kept for a filled fish).
 All of them show the placeholder square.
 
@@ -269,7 +275,7 @@ the placeholder on that key is replaced.
 
 ## Files
 
-- `OrthodoxSymbols.ttf`: the font, version 0.3.000 pre-release (name table: "Version 0.300; pre-release") (1000 units/em, ascent 850, descent 200; OS/2 fsType 0 = installable, so it can be embedded in Word and PDF)
+- `OrthodoxSymbols.ttf`: the font, version 0.6.000 pre-release (name table: "Version 0.600; pre-release") (1000 units/em, ascent 850, descent 200; OS/2 fsType 0 = installable, so it can be embedded in Word and PDF)
 - `OrthodoxSymbols.woff2`: the same font compressed for websites
 - `OrthodoxSymbols_Guide.docx` (Word, font embedded) and `OrthodoxSymbols_Guide.pdf`: pre-release banner, install steps for Windows/macOS/Linux, key chart, sizes, how-to, website use, reserved-keys note, sample cue sheet, license
 - `CHANGELOG.md`: what changed in each version, including any keys that moved
@@ -281,7 +287,7 @@ Please report problems or ideas (a symbol that reads badly, a missing symbol, a 
 
 ## Version numbers
 
-Pre-releases are numbered 0.x (this is 0.3.000; the font's `head.fontRevision` is 0.3 and the name table says "Version 0.300; pre-release", following the Google Fonts MAJOR.MINOR style). The first draft published on GitHub as `v1.000` is now treated as pre-release 0.1. Version 1.0 will be the first stable release. Key assignments are already fixed as of 0.3.000.
+Pre-releases are numbered 0.x (this is 0.6.000; the font's `head.fontRevision` is 0.6 and the name table says "Version 0.600; pre-release", following the Google Fonts MAJOR.MINOR style). The first draft published on GitHub as `v1.000` is now treated as pre-release 0.1. Version 1.0 will be the first stable release. Key assignments have been fixed since 0.3.000.
 
 ## License
 
